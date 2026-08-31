@@ -1,0 +1,23 @@
+
+        body{
+            text-align: center;
+            font-family:  "Betania Patmos", cursive;
+            background: linear-gradient(to right, rgb(66, 66, 182),rgb(243, 71, 71));
+        }
+        h3{
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 10px 10px 5px rgb(101, 59, 59);
+        }
+        div{
+            border: 1px solid rgb(236, 15, 15);
+            margin: 15px 20px;
+            padding: 10px 25px 12px;
+            background-color: rgba(38, 38, 232, 0.1);
+            border-radius: 15px 30px 15px 30px;
+            box-shadow: 10px 10px 5px rgb(101, 59, 59);
+        }
+        #user{
+            width: 10%;
+            float: left;
+            border-radius: 50%;
+        }
