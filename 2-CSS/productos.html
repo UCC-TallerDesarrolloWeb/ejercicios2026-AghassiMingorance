@@ -12,7 +12,29 @@
             Links
         </nav>
         <aside class="item3">
-            Filtros
+            <form name="filter" id="filter">
+            <fieldset>
+                <legend>Buscador</legend>
+                <label for="search">Buscar: </label>
+                <input type="text" id="search" name="search" placeholder="buscar...">
+            </fieldset>
+            <fieldset>
+                <legend>Precios</legend>
+                <label for="min">Minimo</label>
+                <input type="number" name="min" id="min" min="0">
+                <p>
+                <label for="max">Maximo</label>
+                <input type="number" name="max" id="max" min="0">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de Productos</legend>
+                <p>
+                    <input type="checkbox" name="tipo" id="protectores" value="protectores">
+                    <label for="protectores">Protectores</label>
+                </p>
+            </fieldset>
+            </form>
         </aside>
 
         <main class="item4">
