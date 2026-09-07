@@ -35,12 +35,12 @@
 -  [x] Estilo con Descendientes
 -  [x] Pseudo Clases
 -  [x] CV
--  [ ] Backgrounds
--  [ ] Position
--  [ ] 2 Columnas
--  [ ] Grid
--  [ ] grid-areas
--  [ ] Mejora
+-  [x] Backgrounds
+-  [x] Position
+-  [x] 2 Columnas
+-  [x] Grid
+-  [x] grid-areas
+-  [x] Mejora
 -  [ ] Transitions
 -  [ ] Viewport
 -  [ ] Responsive
