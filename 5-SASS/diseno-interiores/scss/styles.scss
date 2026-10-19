@@ -1,0 +1,160 @@
+
+// VARIABLES
+$color-naranja: #eb7900;
+$color-negro: #111111;
+$color-blanco: #ffffff;
+$color-gris: #777777;
+$ancho-maximo: 1100px;
+
+// ESTILOS GENERALES
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: $color-negro;
+}
+
+.contenedor {
+    max-width: $ancho-maximo;
+    margin: 0 auto;
+    padding: 0 40px;
+    background-color: $color-blanco;
+}
+
+// HEADER Y NAVEGACIÓN
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    .logo {
+        display: block;
+        color: $color-negro;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: Georgia, serif;
+
+        span {
+            color: $color-naranja;
+        }
+
+        small {
+            display: block;
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            letter-spacing: 4px;
+        }
+    }
+
+    .nav {
+        display: flex;
+        gap: 25px;
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: $color-gris;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $color-naranja;
+            }
+        }
+    }
+}
+
+// PRESENTACIÓN PRINCIPAL
+.presentacion {
+    background-color: $color-naranja;
+    color: $color-blanco;
+    padding: 75px 90px;
+    margin-bottom: 40px;
+
+    h1 {
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 18px;
+        max-width: 700px;
+    }
+
+    .boton {
+        display: inline-block;
+        background-color: $color-blanco;
+        color: $color-negro;
+        padding: 14px 24px;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 15px;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}
+
+// PORTFOLIO
+.portfolio {
+    margin-bottom: 40px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+
+        .proyecto {
+            overflow: hidden;
+            height: 280px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+// FOOTER
+footer {
+    background-color: $color-negro;
+    color: $color-blanco;
+    padding: 25px;
+    text-align: center;
+
+    p {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+}
+@import "mobile";

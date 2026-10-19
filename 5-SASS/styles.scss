@@ -1,0 +1,55 @@
+
+@use "variables" as v;
+@use "mixins" as m;
+@use "anidados";
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: v.$color-fondo;
+    color: v.$color-texto;
+}
+
+header {
+    @include m.colores(
+        v.$color-principal,
+        v.$color-blanco
+    );
+
+    text-align: center;
+    padding: 30px;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.boton-primario {
+    @include m.boton(
+        v.$color-principal,
+        v.$color-blanco
+    );
+}
+
+.boton-secundario {
+    @include m.boton(
+        v.$color-secundario,
+        v.$color-blanco
+    );
+}
+
+footer {
+    @include m.colores(
+        v.$color-texto,
+        v.$color-blanco
+    );
+
+    text-align: center;
+    padding: 20px;
+}

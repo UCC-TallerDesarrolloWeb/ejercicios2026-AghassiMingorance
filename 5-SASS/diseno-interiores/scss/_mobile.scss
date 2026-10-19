@@ -1,0 +1,64 @@
+
+// ESTILOS PARA CELULARES Y TABLETS
+
+@media screen and (max-width: 768px) {
+
+    .contenedor {
+        padding: 0 15px;
+    }
+
+    // HEADER
+    .header {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 0;
+
+        .nav {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+
+            a {
+                font-size: 11px;
+            }
+        }
+    }
+
+    // PRESENTACIÓN
+    .presentacion {
+        padding: 40px 25px;
+
+        h1 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    // PORTFOLIO
+    .portfolio {
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .galeria {
+            grid-template-columns: 1fr;
+
+            .proyecto {
+                height: 250px;
+            }
+        }
+    }
+
+    // FOOTER
+    footer {
+        padding: 20px 10px;
+
+        p {
+            font-size: 11px;
+        }
+    }
+}
