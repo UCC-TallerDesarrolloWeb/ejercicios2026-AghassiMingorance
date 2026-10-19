@@ -1,0 +1,16 @@
+{
+  "name": "5-sass",
+  "version": "1.0.0",
+  "description": "1. Crea un archivo styles.scss\r 2. Ejecuta sass --watch styles.scss styles.css en la consola del proyecto para transpilar el scss a css\r 3. Crea una variable para almacenar colores y usalo en algún elemento\r 4. Agrega estilos por (descendientes) anidación\r 5. Crea un nuevo archivo de sass para que los estilos anidados estén separados. Crea otro archivo para las variables.\r 6. Crea un mixin que reciba un color para el fondo y un color para las letras. Reutilizalo en diferentes elementos html.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.105.2"
+  }
+}

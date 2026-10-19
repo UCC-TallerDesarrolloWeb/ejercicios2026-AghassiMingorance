@@ -1,0 +1,18 @@
+
+@use "variables" as v;
+
+.contenedor {
+    background-color: v.$color-blanco;
+    padding: v.$espaciado;
+    border-radius: v.$borde-redondeado;
+
+    h2 {
+        color: v.$color-principal;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: v.$color-texto;
+        line-height: 1.6;
+    }
+}
