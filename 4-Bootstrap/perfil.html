@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfil de Aghassi Mingorance</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .perfil-card {
+            width: 340px;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .portada {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .avatar {
+            width: 105px;
+            height: 105px;
+            object-fit: cover;
+            object-position: center;
+            border: 4px solid white;
+            margin-top: -55px;
+            position: relative;
+            background-color: #e9ecef;
+        }
+
+        .list-group-item-action:hover {
+            background-color: #e9f2ff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="container my-5 d-flex justify-content-center">
+
+        <div class="card perfil-card shadow-sm">
+
+            <!-- Imagen de portada -->
+            <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900"
+                class="card-img-top portada"
+                alt="Portada de tecnología e informática"
+            >
+
+            <!-- Información del perfil -->
+            <div class="card-body text-center">
+
+                <!-- Foto de perfil personal -->
+                <img
+                    src="imagenes/fotodeperfil.png"
+                    class="avatar rounded-circle mx-auto d-block"
+                    alt="Foto de perfil de Aghassi Mingorance"
+                >
+
+                <!-- Nombre -->
+                <h4 class="card-title mt-3">
+                    Aghassi Mingorance
+                </h4>
+
+                <!-- Carrera -->
+                <p class="text-primary fw-bold mb-1">
+                    Estudiante de Ingeniería en Informática
+                </p>
+
+                <!-- Universidad -->
+                <p class="text-secondary small">
+                    Universidad Católica de Córdoba
+                </p>
+
+                <!-- Descripción personal -->
+                <p class="card-text small">
+                    Estudiante de Ingeniería en Informática,
+                    interesado en el desarrollo web, la
+                    programación y las nuevas tecnologías.
+                    Actualmente aprendiendo HTML, CSS,
+                    JavaScript y Bootstrap.
+                </p>
+
+                <!-- Botón GitHub -->
+                <a
+                    href="https://github.com/AghassiMingorance"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                >
+                    Ver mi GitHub
+                </a>
+
+            </div>
+
+            <!-- Lista de opciones -->
+            <div class="list-group list-group-flush">
+
+                <!-- Proyectos -->
+                <a
+                    href="https://github.com/UCC-TallerDesarrolloWeb/ejercicios2026-AghassiMingorance"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="list-group-item list-group-item-action"
+                >
+                    <span class="me-2">💻</span>
+                    Mis proyectos
+                </a>
+
+                <!-- Tecnologías -->
+                <div class="list-group-item">
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <span>
+                            <span class="me-2">📚</span>
+                            Tecnologías
+                        </span>
+
+                        <span class="badge bg-primary rounded-pill">
+                            4
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Universidad -->
+                <div class="list-group-item">
+                    <span class="me-2">🎓</span>
+                    Ingeniería en Informática - UCC
+                </div>
+
+                <!-- Ubicación -->
+                <div class="list-group-item">
+                    <span class="me-2">📍</span>
+                    Córdoba, Argentina
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
