@@ -1,4 +1,3 @@
-
 import { NavLink, useNavigate } from "react-router-dom";
 
 function Header({ estaLogueado, onLogout }) {
@@ -17,13 +16,12 @@ function Header({ estaLogueado, onLogout }) {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/login">Login</NavLink>
         <NavLink to="/actividades">Actividades</NavLink>
+        <NavLink to="/tienda">Tienda</NavLink>
+
+        {estaLogueado && <NavLink to="/carrito">Carrito</NavLink>}
       </nav>
 
-      {estaLogueado && (
-        <button onClick={handleLogout}>
-          Logout
-        </button>
-      )}
+      {estaLogueado && <button onClick={handleLogout}>Logout</button>}
     </header>
   );
 }
