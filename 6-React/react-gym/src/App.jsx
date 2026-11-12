@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Poke from "@/pages/Poke";
@@ -6,9 +5,9 @@ import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import Login from "@/pages/Login";
 import Actividades from "@/pages/Actividades";
-
+import Store from "@/pages/Store";
 import "@/styles/Layout.scss";
-
+import Cart from "@/pages/Cart";
 function App() {
   const [estaLogueado, setEstaLogueado] = useState(() => {
     return sessionStorage.getItem("gymLoggedIn") === "true";
@@ -28,32 +27,23 @@ function App() {
     <Routes>
       <Route path="pokemon" element={<Poke />} />
       <Route
-        element={
-          <Layout
-            estaLogueado={estaLogueado}
-            onLogout={cerrarSesion}
-          />
-        }
+        path="tienda"
+        element={<Store estaLogueado={estaLogueado} />}
+      />{" "}
+      <Route path="carrito" element={<Cart />} />
+      <Route
+        element={<Layout estaLogueado={estaLogueado} onLogout={cerrarSesion} />}
       >
         <Route index element={<Home />} />
 
-        <Route
-          path="login"
-          element={<Login onLogin={iniciarSesion} />}
-        />
+        <Route path="login" element={<Login onLogin={iniciarSesion} />} />
 
         <Route
           path="actividades"
-          element={
-            <Actividades estaLogueado={estaLogueado} />
-          }
+          element={<Actividades estaLogueado={estaLogueado} />}
         />
       </Route>
-
-      <Route
-        path="*"
-        element={<Navigate to="/" replace />}
-      />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
